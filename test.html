@@ -7,6 +7,7 @@
       <meta property="og:description"   content="I just signed up for the IBM Bluemix Standard Account Beta! Build and run apps for free for as long as you want" />
       <meta property="og:image"         content="//ace-registration-production-black.cdn.us-south.s-bluemix.net/registration/images/Bluemix-icon-decorative-lightbg.png" />
       <style>
+        <!--This is here to constrain size of 2x LinkedIn image to be the proper size and resolution-->
         #LinkedInShare {
           height: 28px;
           width:77px;
@@ -15,6 +16,8 @@
   </head>
   <body>
 
+    <!--Loading in the Facebook script-->
+    
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -23,14 +26,26 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=97359078157";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!--Here are all the Share buttons-->
 
-    <div class="fb-share-button" data-href="http://ibm.biz/bluemix-beta" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fibm.biz%2Fbluemix-beta&amp;src=sdkpreparse">Share</a></div>
+    <div id="ShareButtons">
+      
+      <!--Here's Facebook-->
+    
+      <div class="fb-share-button" data-href="http://ibm.biz/bluemix-beta" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fibm.biz%2Fbluemix-beta&amp;src=sdkpreparse">Share</a></div>
 
-    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="I just signed up for the @IBMBluemix Standard Account Beta! Build and run apps for free for as long as you want" data-url="http://ibm.biz/bluemix-beta" data-related="IBMBluemix" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!--Here's Twitter, which needs a link for the button and a script to make it sing-->
+      
+      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="I just signed up for the @IBMBluemix Standard Account Beta! Build and run apps for free for as long as you want" data-url="http://ibm.biz/bluemix-beta" data-related="IBMBluemix" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-      <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://ibm.biz/bluemix-beta&title=IBM%20Bluemix%20Standard%20Account%20Beta&summary=I%20just%20signed%20up%20for%20the%20IBM%20Bluemix%20Standard%20Account%20Beta!%20Build%20and%20run%20apps%20for%20free%20for%20as%20long%20as%20you%20want&source=Bluemix.net">
-        <img id="LinkedInShare" src="https://github.com/goanalog/ShareButtons/blob/master/LinkedInShareButton.png?raw=true" />
-      </a>
+      <!--Here's a custom LinkedIn button, with a custom graphic to match size of Facebook and Twitter-->
+      
+      <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+        <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://ibm.biz/bluemix-beta&title=IBM%20Bluemix%20Standard%20Account%20Beta&summary=I%20just%20signed%20up%20for%20the%20IBM%20Bluemix%20Standard%20Account%20Beta!%20Build%20and%20run%20apps%20for%20free%20for%20as%20long%20as%20you%20want&source=Bluemix.net">
+          <img id="LinkedInShare" src="https://github.com/goanalog/ShareButtons/blob/master/LinkedInShareButton.png?raw=true" />
+        </a>
+    </div>
+    
  </body>
 </html>
