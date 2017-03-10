@@ -1,7 +1,9 @@
 <html>
   <head>
     <title>Social Button Test</title>
+    
       <!--Here are all the meta properties that drive the Facebook button-->
+    
       <meta property="og:url"           content="http://ibm.biz/bluemix-beta" />
       <meta property="og:type"          content="website" />
       <meta property="og:title"         content="IBM Bluemix Standard Account Beta" />
@@ -9,18 +11,22 @@
       <meta property="og:image"         content="//ace-registration-production-black.cdn.us-south.s-bluemix.net/registration/images/Bluemix-icon-decorative-lightbg.png" />
       
     <!--Styling for LinkedIn button to keep the 2x asset constrainted to its proper size while pushing resolution-->
+    
     <style>
         #LinkedInShare {
           height: 28px;
           width:77px;
         }
       </style>
+    
   </head>
+  
   <body>
 
     <!--Loading in the Facebook script-->
     
     <div id="fb-root"></div>
+    
     <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -44,10 +50,13 @@
       <!--Here's a custom LinkedIn button, with a custom graphic to match size of Facebook and Twitter-->
       
       <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+      
         <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://ibm.biz/bluemix-beta&title=IBM%20Bluemix%20Standard%20Account%20Beta&summary=I%20just%20signed%20up%20for%20the%20IBM%20Bluemix%20Standard%20Account%20Beta!%20Build%20and%20run%20apps%20for%20free%20for%20as%20long%20as%20you%20want&source=Bluemix.net">
           <img id="LinkedInShare" src="https://github.com/goanalog/ShareButtons/blob/master/LinkedInShareButton.png?raw=true" />
         </a>
+      
     </div>
     
  </body>
+  
 </html>
